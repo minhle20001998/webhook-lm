@@ -64,27 +64,9 @@ app.get('/webhook', (req, res) => {
 });
 
 
-
 app.get('/', (req, res) => {
-    res.json({
-        "ok": "ok"
-    })
+    res.sendFile(__dirname + '/index.html');
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 const noti = [];
